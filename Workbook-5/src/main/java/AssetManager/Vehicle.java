@@ -75,7 +75,7 @@ public class Vehicle extends Asset {
     public String toString(){
         return super.toString () +
                 String.format(" %-30s %s\n", "address:" , makeModel ) +
-                String.format(" %-30s %s\n", "condition:" , year) +
+                String.format(" %-30s %d\n", "condition:" , year) +
                 String.format(" %-30s %d", "square foot:", odometer);
     }
 

@@ -47,6 +47,6 @@ public class Asset {
         return
                 String.format(" %-30s %s\n", "description:" , description ) +
                 String.format(" %-30s %s\n", "dateAcquired:" , dateAcquired) +
-                String.format(" %-30s %s\n", "originalCost:", originalCost);
+                String.format(" %-30s %2f\n", "originalCost:", originalCost);
     }
 }

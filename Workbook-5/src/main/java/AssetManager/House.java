@@ -74,8 +74,8 @@ public class House extends Asset{
     public String toString(){
         return super.toString () +
                 String.format(" %-30s %s\n", "address:" , address ) +
-                String.format(" %-30s %s\n", "condition:" , condition) +
-                String.format(" %-30s %s\n", "square foot:", squareFoot) +
-                String.format(" %-30s %s", "lot size:", lotSize);
+                String.format(" %-30s %d\n", "condition:" , condition) +
+                String.format(" %-30s %d\n", "square foot:", squareFoot) +
+                String.format(" %-30s %d", "lot size:", lotSize);
     }
 }
