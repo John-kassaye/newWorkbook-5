@@ -1,10 +1,5 @@
 package MiniProjects.ShoppingCartSystem;
 
-import MiniProjects.MagicWonderShop.Item;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         ShoppingCart shoppingCart = new ShoppingCart();
@@ -12,7 +7,6 @@ public class Main {
         shoppingCart.addItem(new Product("pizza",4.99));
         shoppingCart.addItem(new DiscountedProduct("lemonade",7,0.10));
         shoppingCart.addItem(new DiscountedProduct("Tv",340,0.20));
-
         shoppingCart.printReceipt();
     }
 }
