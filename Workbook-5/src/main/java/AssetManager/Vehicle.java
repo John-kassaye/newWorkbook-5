@@ -40,38 +40,6 @@ public class Vehicle extends Asset {
 
     @Override
     public double getValue(){
-//        double cost = 0;
-//        double originalCost = getOriginalCost();
-//        if (0 <= year && year <= 3){
-//            if (getOdometer() > 100000 && !getMakeModel().contains("Honda") && !getMakeModel().contains("Toyota")){
-//            cost += originalCost - (getOriginalCost() - (0.03 * getOriginalCost() * getYear())) * 0.25;
-//            } else {
-//               cost += getOriginalCost() - (0.03 * getOriginalCost() * getYear());
-//            }
-//        }
-//        if ( 4 <= year && year <= 6){
-//            if (getOdometer() > 100000 && !getMakeModel().contains("Honda") && !getMakeModel().contains("Toyota")) {
-//                cost += originalCost - (getOriginalCost() - 0.06 * getOriginalCost() * getYear()) * 0.25;
-//            } else {
-//                cost =  getOriginalCost() - 0.06 * getOriginalCost() * getYear();
-//            }
-//        }
-//
-//        if (7 <= year && year <= 10){
-//            if (getOdometer() > 100000 && !getMakeModel().contains("Honda") && !getMakeModel().contains("Toyota")) {
-//                cost+= originalCost - (getOriginalCost() - 0.08 * getOriginalCost() * getYear()) * 0.25;
-//            } else {
-//                cost+= getOriginalCost() - 0.08 * getOriginalCost() * getYear();
-//            }
-//        }
-//
-//        if (year > 10){
-//            if (getOdometer() > 100000 && !getMakeModel().contains("Honda") && !getMakeModel().contains("Toyota")) {
-//                cost = 1000 * 0.25;
-//            } else {
-//                cost = 1000;
-//            }
-//        }
 
         double cost = 0;
         int currentYear = LocalDate.now().getYear();

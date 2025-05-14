@@ -20,15 +20,15 @@ public class Main {
             System.out.println(asset.getValue() + "\n");
         }
 
-//       for (Asset asset : assetList){
-//           if (asset instanceof House){
-//               House house = (House) asset;
-//               System.out.println(house.getAddress());
-//           } else if(asset instanceof Vehicle){
-//               Vehicle vehicle = (Vehicle) asset;
-//               System.out.println(vehicle.getMakeModel());
-//           }
-//       }
+       for (Asset asset : assetList){
+           if (asset instanceof House){
+               House house = (House) asset;
+               System.out.println(house.getAddress());
+           } else if(asset instanceof Vehicle){
+               Vehicle vehicle = (Vehicle) asset;
+               System.out.println(vehicle.getMakeModel());
+           }
+       }
     }
 }
 
