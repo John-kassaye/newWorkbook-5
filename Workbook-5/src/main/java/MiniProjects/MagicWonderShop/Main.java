@@ -8,10 +8,13 @@ public class Main {
         Magician magician = new Magician();
         MagicItem magician3 = new Wand("wand",569,"Wwq");
         MagicItem magician4 = new Potion("potion",1000,"wqwq");
-
         magician.add(magician3);
         magician.add(magician4);
         magician.performShow();
+
+        // alternate way
+//        magician.getMagicItemList().add(magician3);
+//        magician.getMagicItemList().add(magician4);
 
         Musician musician = new Musician();
         MusicItem magicItem1 = new Guitar("guitar",100, 2);
@@ -21,6 +24,10 @@ public class Main {
         musician.add(magicItem2);
         musician.playConcert();
 
+        // alternate way
+//        musician.getMusicItemsList().add(magicItem1);
+//        musician.getMusicItemsList().add(magicItem2);
+        
         System.out.println();
         List<Item> itemList = new ArrayList<>();
         itemList.add(new Potion("potion",232,"blabla"));

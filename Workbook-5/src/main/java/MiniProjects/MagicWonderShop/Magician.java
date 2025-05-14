@@ -6,6 +6,10 @@ import java.util.List;
 public class Magician {
     List<MagicItem> magicItemList = new ArrayList<>();
 
+    public List<MagicItem> getMagicItemList() {
+        return magicItemList;
+    }
+
     public void performShow(){
         for (MagicItem magicItem : magicItemList){
             magicItem.use();

@@ -6,6 +6,10 @@ import java.util.List;
 public class Musician {
     List<MusicItem> musicItemsList = new ArrayList<>();
 
+    public List<MusicItem> getMusicItemsList() {
+        return musicItemsList;
+    }
+
     public void playConcert(){
         for (MusicItem musicItem : musicItemsList){
             musicItem.use();
