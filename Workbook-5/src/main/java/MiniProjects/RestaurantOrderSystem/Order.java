@@ -25,13 +25,11 @@ public class Order {
     }
 
     public void onlyVegetarian(){
-        for (MenuItem menuItem :menuItemList){
-            if (menuItem instanceof MainDish){
-                MainDish mainDish = (MainDish) menuItem;
-                if (mainDish.isVegetarian()){
+        System.out.println("\nHere is your Vegetarian order");
+        for (MenuItem menuItem :menuItemList) {
+            if (menuItem instanceof MainDish && ((MainDish) menuItem).isVegetarian()) {
                     System.out.println(menuItem.format());
                 }
             }
         }
-    }
 }
