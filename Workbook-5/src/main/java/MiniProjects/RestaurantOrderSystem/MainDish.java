@@ -7,6 +7,6 @@ public class MainDish extends MenuItem{
 
     @Override
     public String getDescription(){
-        return " it contains nuts.";
+        return "it contains nuts.";
     }
 }

@@ -15,8 +15,7 @@ public class Order {
         double totalCalories = 0;
 
         for (MenuItem menuItem : menuItemList){
-            System.out.println("Here is your order: " + menuItem.getName() + "\nHere is the description for the order: " + menuItem.getDescription()
-                    + "\nHere is your price " +  menuItem.getPrice() + "\nHere is your calories: " +menuItem.getCalories() +"\n");
+            System.out.println(menuItem.format());
         }
 
 

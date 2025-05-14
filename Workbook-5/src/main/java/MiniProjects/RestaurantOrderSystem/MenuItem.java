@@ -26,4 +26,11 @@ public class MenuItem {
     public String getDescription(){
         return "something";
     }
+
+    public String format(){
+        return String.format("%-45s %s", "\nHere is your order" , getName()) +
+                String.format("%-45s %s", "\nHere is the description for the order" , getDescription()) +
+                String.format("%-45s %.2f","\nHere is your price", getPrice()) +
+                String.format("%-45s %d","\nHere is your calories", getCalories());
+    }
 }
