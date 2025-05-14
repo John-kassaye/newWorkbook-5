@@ -2,8 +2,8 @@ package MiniProjects.MagicWonderShop;
 
 public class Potion extends MagicItem{
 
-    public Potion(String name, double price) {
-        super(name, price);
+    public Potion(String name, double price, String rarityLevel) {
+        super(name, price, rarityLevel);
     }
 
     @Override

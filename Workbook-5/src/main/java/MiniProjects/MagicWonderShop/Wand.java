@@ -1,8 +1,8 @@
 package MiniProjects.MagicWonderShop;
 
 public class Wand extends MagicItem{
-    public Wand(String name, double price) {
-        super(name, price);
+    public Wand(String name, double price, String rarityLevel) {
+        super(name, price, rarityLevel);
     }
 
     @Override
