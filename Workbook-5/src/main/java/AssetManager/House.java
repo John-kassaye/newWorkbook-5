@@ -49,6 +49,33 @@ public class House extends Asset{
 
     @Override
     public double getValue(){
-        return squareFoot;
+
+        double value = 0;
+        switch (getCondition()){
+            case 1:
+                value+= 180 * getSquareFoot();
+                break;
+            case 2:
+                value+= 130 * getSquareFoot();
+                break;
+            case 3:
+                value+= 90 * getSquareFoot();
+                break;
+            case 4:
+                value+= 80 * getSquareFoot();
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+        return value;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString () +
+                String.format(" %-30s %s\n", "address:" , address ) +
+                String.format(" %-30s %s\n", "condition:" , condition) +
+                String.format(" %-30s %s\n", "square foot:", squareFoot) +
+                String.format(" %-30s %s", "lot size:", lotSize);
     }
 }

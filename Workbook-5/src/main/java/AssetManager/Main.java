@@ -12,23 +12,23 @@ public class Main {
 
         assetList.add(new House("Vacation", "May 11", 200000, "112 street", 1, 23, 1));
         assetList.add(new House("john's house", "Sept 23", 100000, "32 street", 3, 55, 6));
-        assetList.add(new Vehicle("personal", "April 11", 20000, "tesla", 4, 130000));
-        assetList.add(new Vehicle("mine", "june 11", 34000, "ford", 8, 130000));
+        assetList.add(new Vehicle("personal", "April 11", 20000, "tesla", 2012, 130000));
+        assetList.add(new Vehicle("mine", "june 11", 34000, "ford", 2021, 130000));
 
         for (Asset asset :assetList){
             System.out.println(asset);
-            System.out.println(asset.getValue());
+            System.out.println(asset.getValue() + "\n");
         }
 
-       for (Asset asset : assetList){
-           if (asset instanceof House){
-               House house = (House) asset;
-               System.out.println(house.getAddress());
-           } else if(asset instanceof Vehicle){
-               Vehicle vehicle = (Vehicle) asset;
-               System.out.println(vehicle.getMakeModel() + vehicle.getMakeModel());
-           }
-       }
+//       for (Asset asset : assetList){
+//           if (asset instanceof House){
+//               House house = (House) asset;
+//               System.out.println(house.getAddress());
+//           } else if(asset instanceof Vehicle){
+//               Vehicle vehicle = (Vehicle) asset;
+//               System.out.println(vehicle.getMakeModel());
+//           }
+//       }
     }
 }
 

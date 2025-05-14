@@ -28,6 +28,7 @@ public class Asset {
     }
 
     public double getOriginalCost() {
+
         return originalCost;
     }
 
@@ -36,6 +37,7 @@ public class Asset {
     }
 
     public double getValue(){
+
         return originalCost;
     }
 
@@ -43,8 +45,8 @@ public class Asset {
     @Override
     public String toString() {
         return
-                " description ='" + description + '\'' +
-                ", dateAcquired ='" + dateAcquired + '\'' +
-                ", originalCost ='" + originalCost ;
+                String.format(" %-30s %s\n", "description:" , description ) +
+                String.format(" %-30s %s\n", "dateAcquired:" , dateAcquired) +
+                String.format(" %-30s %s\n", "originalCost:", originalCost);
     }
 }
