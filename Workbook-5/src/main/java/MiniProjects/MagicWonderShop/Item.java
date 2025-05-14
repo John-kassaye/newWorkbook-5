@@ -26,4 +26,8 @@ public class Item {
     public void use(){
         System.out.println("Boom!");
     }
+
+    public void addPrice(){
+        System.out.println(getPrice());
+    }
 }

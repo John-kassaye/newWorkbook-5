@@ -6,30 +6,36 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Magician magician = new Magician();
-        MagicItem magician3 = new Wand("wand",23,"Wwq");
-        MagicItem magician4 = new Potion("potion",23,"wqwq");
+        MagicItem magician3 = new Wand("wand",569,"Wwq");
+        MagicItem magician4 = new Potion("potion",1000,"wqwq");
 
         magician.add(magician3);
         magician.add(magician4);
         magician.performShow();
 
         Musician musician = new Musician();
-        MusicItem magicItem1 = new Guitar("guitar",100);
-        MusicItem magicItem2 = new DrumKit("drum kit",300);
+        MusicItem magicItem1 = new Guitar("guitar",100, 2);
+        MusicItem magicItem2 = new DrumKit("drum kit",300, 4);
 
         musician.add(magicItem1);
         musician.add(magicItem2);
         musician.playConcert();
 
-        System.out.println(Item.getNumOfItem());
-
+        System.out.println();
         List<Item> itemList = new ArrayList<>();
-        MagicItem magic4 = new Potion("potion",23,"wqwq");
-        itemList.add(magic4);
+        itemList.add(new Potion("potion",232,"blabla"));
+        itemList.add(new DrumKit("drum",300,5));
+        itemList.add(new Guitar("guitar",700,7));
+        itemList.add(new Wand("wand",900,"blabla"));
 
         for (Item item : itemList){
             item.use();
         }
+
+        System.out.println(Item.getNumOfItem());
+
+        System.out.println("\ntotal cost: " + magician.addMethod());
+        musician.addMethod();
 
     }
 }

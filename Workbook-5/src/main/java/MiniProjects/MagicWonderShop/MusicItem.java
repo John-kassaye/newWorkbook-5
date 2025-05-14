@@ -1,7 +1,10 @@
 package MiniProjects.MagicWonderShop;
 
 public class MusicItem extends Item{
-    public MusicItem(String name, double price) {
+    private int numberOfString;
+
+    public MusicItem(String name, double price, int numberOfString) {
         super(name, price);
+        this.numberOfString = numberOfString;
     }
 }

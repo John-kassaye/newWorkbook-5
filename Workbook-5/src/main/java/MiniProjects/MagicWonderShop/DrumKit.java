@@ -1,8 +1,8 @@
 package MiniProjects.MagicWonderShop;
 
 public class DrumKit extends MusicItem {
-    public DrumKit(String name, double price) {
-        super(name, price);
+    public DrumKit(String name, double price, int numberOfString) {
+        super(name, price, numberOfString);
     }
 
     @Override

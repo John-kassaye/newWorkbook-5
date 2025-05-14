@@ -1,8 +1,8 @@
 package MiniProjects.MagicWonderShop;
 
 public class Guitar extends MusicItem{
-    public Guitar(String name, double price) {
-        super(name, price);
+    public Guitar(String name, double price, int numberOfString) {
+        super(name, price, numberOfString);
     }
 
     @Override

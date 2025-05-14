@@ -15,4 +15,14 @@ public class Magician {
     public void add(MagicItem magicItem){
         magicItemList.add(magicItem);
     }
+
+    public double addMethod(){
+        double total = 0;
+        for (Item item : magicItemList){
+            total+= item.getPrice();
+        }
+
+        return total;
+    }
+
 }

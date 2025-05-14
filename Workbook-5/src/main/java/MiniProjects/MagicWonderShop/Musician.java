@@ -16,4 +16,13 @@ public class Musician {
         musicItemsList.add(musicItem);
     }
 
+    public void addMethod(){
+        double total = 0;
+        for (Item item : musicItemsList){
+            total+= item.getPrice();
+        }
+
+        System.out.println("total cost: " + total);
+    }
+
 }
