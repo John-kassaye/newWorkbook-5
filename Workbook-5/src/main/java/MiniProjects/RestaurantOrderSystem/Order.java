@@ -16,15 +16,22 @@ public class Order {
 
         for (MenuItem menuItem : menuItemList){
             System.out.println(menuItem.format());
-        }
-
-
-        for (MenuItem menuItem : menuItemList){
             totalPrice+= menuItem.getPrice();
             totalCalories+= menuItem.getCalories();
         }
 
-        System.out.println("Here is your total price: " + totalPrice);
+        System.out.println("\nHere is your total price: " + totalPrice);
         System.out.println("Here is your total calories: " + totalCalories);
+    }
+
+    public void onlyVegetarian(){
+        for (MenuItem menuItem :menuItemList){
+            if (menuItem instanceof MainDish){
+                MainDish mainDish = (MainDish) menuItem;
+                if (mainDish.isVegetarian()){
+                    System.out.println(menuItem.format());
+                }
+            }
+        }
     }
 }

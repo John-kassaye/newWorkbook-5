@@ -1,8 +1,15 @@
 package MiniProjects.RestaurantOrderSystem;
 
 public class MainDish extends MenuItem{
-    public MainDish(String name, double price, int calories) {
+    private boolean vegetarian;
+
+    public MainDish(String name, double price, int calories, boolean vegetarian) {
         super(name, price, calories);
+        this.vegetarian = vegetarian;
+    }
+
+    public boolean isVegetarian() {
+        return vegetarian;
     }
 
     @Override
